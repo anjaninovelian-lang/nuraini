@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Absensi Anggota Basket</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <header>
+        <h1>Absensi Anggota Basket</h1>
+        <p>Sistem absensi + analisa market hari ini</p>
+    </header>
+
+    <section class="container">
+        <div class="card">
+            <h2>Form Absensi</h2>
+            <form id="absensiForm">
+                <label>Nama Anggota</label>
+                <input type="text" id="nama" required />
+
+                <label>Kelas / Posisi</label>
+                <input type="text" id="kelas" required />
+
+                <button type="submit">Kirim Absensi</button>
+            </form>
+            <p id="status"></p>
+        </div>
+
+        <div class="card">
+            <h2>Analisa Market Hari Ini</h2>
+
+            <label>Pilih Metode Analisa</label>
+            <select id="metode">
+                <option value="teknikal">Analisa Teknikal</option>
+                <option value="fundamental">Analisa Fundamental</option>
+            </select>
+
+            <button id="btnAnalisa">Tampilkan Analisa</button>
+
+            <div class="analisaBox" id="hasilAnalisa"></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Absensi Anggota Basket • Dibuat untuk GitHub Pages</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
+   
+
+
+
+
+
+  
